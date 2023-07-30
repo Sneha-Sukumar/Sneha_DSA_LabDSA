@@ -3,7 +3,7 @@ import java.util.*;
 public class Main
 {
 
-    // main method to test below implwmwnted method
+    // main method to test below-implemented method
 
     public static void main(String[] args) {
 
@@ -45,12 +45,12 @@ public class Main
 
             if (x == '(' || x == '[' || x == '{')
             {
-                // Push the opening paranthesis into stack
+                // Push the opening parenthesis into the stack
                 stack.push(x);
                 continue;
             }
 
-            // If current character is not opening
+            // If the current character is not opening
             // bracket, then it must be closing. So stack
             // cannot be empty at this point.
 
@@ -60,7 +60,7 @@ public class Main
             char check;
 
 
-            // and here check them by poping out
+            // and here check them by popping out
 
             if(x == ')'){
 
@@ -83,7 +83,7 @@ public class Main
 
         }
 
-        // if the stack is empty then string entered is a Balanced Brackets
+        //If the stack is empty then the string entered is a Balanced Brackets
 
         return (stack.isEmpty());
     }
